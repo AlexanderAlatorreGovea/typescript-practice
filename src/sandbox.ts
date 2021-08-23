@@ -120,3 +120,5 @@
     age: 25,
   };
 })(); 
+
+console.log('compiling...')
