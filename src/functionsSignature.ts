@@ -12,8 +12,22 @@
     if (action === "add") {
       return numOne + numTwo;
     } else {
-        return numTwo - numTwo
+      return numTwo - numTwo;
     }
   };
   //example 3
+  let logDetails: (
+    obj: {
+      name: string;
+      age: number;
+    }
+  ) => void;
+
+  type person = {
+    name: string;
+    age: number;  
+  };
+
+  logDetails = (ninja: person) =>
+    console.log(`${ninja.name} is ${ninja.age} years old`);
 })();

@@ -1,7 +1,7 @@
 "use strict";
-var logDetails = function (uid, item) {
-    console.log(item + " has uid of " + uid);
+const logDetails = (uid, item) => {
+    console.log(`${item} has uid of ${uid}`);
 };
-var greetAgain = function (user) {
-    console.log(user.name + " say hello");
+const greetAgain = (user) => {
+    console.log(`${user.name} say hello`);
 };

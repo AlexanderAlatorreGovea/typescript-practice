@@ -1,14 +1,14 @@
 "use strict";
 //let greet: Function;
-(function () {
+(() => {
     //example 1
-    var greet;
-    greet = function (name, greeting) {
-        console.log("" + name);
+    let greet;
+    greet = (name, greeting) => {
+        console.log(`${name}`);
     };
     //example 2
-    var calc;
-    calc = function (numOne, numTwo, action) {
+    let calc;
+    calc = (numOne, numTwo, action) => {
         if (action === "add") {
             return numOne + numTwo;
         }
@@ -17,4 +17,6 @@
         }
     };
     //example 3
+    let logDetails;
+    logDetails = (ninja) => console.log(`${ninja.name} is ${ninja.age} years old`);
 })();
